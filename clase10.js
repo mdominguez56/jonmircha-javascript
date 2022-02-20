@@ -1,3 +1,5 @@
+// Clase 10
+
 // Las funciones son un tipo de dato complejo, considerado objeto.
 
 // Funciones declaradas
