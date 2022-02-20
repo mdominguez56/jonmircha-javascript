@@ -1,0 +1,1 @@
+// Las funciones son un tipo de dato complejo, considerado objeto.
