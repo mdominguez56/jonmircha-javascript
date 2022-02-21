@@ -1,27 +1,37 @@
-// Class 11
+// Clase 11 - Functions
 
-const a = []
-console.log(a)
+// Las funciones son un tipo de dato complejo, considerado objeto.
 
-const b = [1,true,"Hello",["a","b","c"]]
-console.log(b)
-
-const c = Array.of("X","Y","Z",9,8,7)
-console.log(c)
-
-const d = Array(10).fill(false)
-console.log(d)
-
-const e = new Array(1,2,3)
-console.log(e)
-
-const colors = ["Red","Black","Blue"]
-colors.push("Yellow") // Add element to the end of the Array
-colors.pop() // Delete the last element of the Array
-colors.forEach(function(e,index){
-    console.log(`<li id="${index}">${e}</li>`)
-})
+// Funciones declaradas
+function funcionQueDevuelveValor(){
+    return "La funcion ha retornado una cadena de texto"
+}
+let valorDeFuncion = funcionQueDevuelveValor()
+console.log(valorDeFuncion)
 
 
+// Valor por defecto de parametros de una funcion
+function saludar(nombre = "desconocido",edad = 0){
+    console.log(`Hola mi nombre es ${nombre} y tengo ${edad}`)
+}
+
+saludar("Matias Dominguez Alonso", 29)
+saludar()
 
 
+// Funciones declaradas - Puedo invocarse antes de declarada
+funcionDeclarada()
+
+function funcionDeclarada(){
+    console.log("Esto es una funcion declarada")
+}
+
+funcionDeclarada()
+
+// Funcion anonima - Solo puede invocarse luego de su definicion
+
+const funcionExpresada = function(){
+    console.log("Esto es una funcion expresada")
+}
+
+funcionExpresada()
