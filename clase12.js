@@ -1,27 +1,24 @@
-// Class 11 - Array
+// Class 12 - Objects
 
-const a = []
-console.log(a)
-
-const b = [1,true,"Hello",["a","b","c"]]
+const b = {}
 console.log(b)
 
-const c = Array.of("X","Y","Z",9,8,7)
+const c = new Object()
 console.log(c)
 
-const d = Array(10).fill(false)
-console.log(d)
+const matias = {
+    name: "Matias",
+    lastname: "Dominguez Alonso",
+    age: 29,
+    hobbies: ["Run","Crossfit"],
+    married: true,
+    contact: {
+        email: "matias@gmail.com",
+        mobile: 123456789
+    },
+    fun: function(){
+        console.log("Hello")
+    }
+}
 
-const e = new Array(1,2,3)
-console.log(e)
-
-const colors = ["Red","Black","Blue"]
-colors.push("Yellow") // Add element to the end of the Array
-colors.pop() // Delete the last element of the Array
-colors.forEach(function(e,index){
-    console.log(`<li id="${index}">${e}</li>`)
-})
-
-
-
-
+// Minuto 10 del video
