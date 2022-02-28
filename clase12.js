@@ -18,7 +18,13 @@ const matias = {
     },
     fun: function(){
         console.log("Hello")
+    },
+    myName: function(){
+        console.log(`My name is ${this.name} ${this.lastname}`)
     }
 }
 
-// Minuto 10 del video
+console.log(matias["name"]) // Impresion de un solo valor dentro del objeto
+console.log(matias.age) //
+matias.myName();
+console.log(Object.keys(matias)) // Listar keys de un object
